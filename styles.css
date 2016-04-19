@@ -1,0 +1,16 @@
+td {
+    width: 150px;
+    height: 150px;
+    padding-left: 10px;
+    border: solid;
+}
+table {
+    border-left:solid;
+    border-left-color: #DF5B2D;
+    border-right:solid;
+    border-right-color: #DF5B2D;
+    border-bottom:solid;
+    border-bottom-color: #DF5B2D;
+    width: 751px;
+    height: 750px;
+}
