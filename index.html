@@ -9,41 +9,49 @@
                 <img src="images/pope francis year of mercy bingo header.png" style="width: 750px"/>
             </tr>
             <tr>
-                <td id="spot0"></td>
+                <td id="spot0" onclick="addToken('spot0')"></td>
                 <td id="spot1"></td>
                 <td id="spot2"></td>
                 <td id="spot3"></td>
                 <td id="spot4"></td>
             </tr>
             <tr>
-                <td id="spot5">B</td>
-                <td id="spot6">I</td>
-                <td id="spot7">N</td>
-                <td id="spot8">G</td>
-                <td id="spot9">O</td>
+                <td id="spot5"></td>
+                <td id="spot6"></td>
+                <td id="spot7"></td>
+                <td id="spot8"></td>
+                <td id="spot9"></td>
             </tr>
             <tr>
-                <td id="spot10">B</td>
-                <td id="spot11">I</td>
+                <td id="spot10"></td>
+                <td id="spot11"></td>
                 <td><img src="images/pope francis year of mercy bingo center square.png" style="width:150px; height150px;" /></td>
-                <td id="spot12">G</td>
-                <td id="spot13">O</td>
+                <td id="spot12"></td>
+                <td id="spot13"></td>
             </tr>
             <tr>
-                <td id="spot14">B</td>
-                <td id="spot15">I</td>
-                <td id="spot16">N</td>
-                <td id="spot17">G</td>
-                <td id="spot18">O</td>
+                <td id="spot14"></td>
+                <td id="spot15"></td>
+                <td id="spot16"></td>
+                <td id="spot17"></td>
+                <td id="spot18"></td>
             </tr>
             <tr>
-                <td id="spot19">B</td>
-                <td id="spot20">I</td>
-                <td id="spot21">N</td>
-                <td id="spot22">G</td>
-                <td id="spot23">O</td>
+                <td id="spot19"></td>
+                <td id="spot20"></td>
+                <td id="spot21"></td>
+                <td id="spot22"></td>
+                <td id="spot23"></td>
             </tr>
         </table>
+        <div>
+            <p>Is there an excuse we missed? Suggest it! Fill out the below form and if we don't happen to have it, we'll add it!</p>
+            <form action="https://formspree.io/jeff@trcthoughts.com"
+                  method="POST">
+                Excuse: <input type="text" name="excuse">
+                <input type="submit" value="Send">
+            </form>
+        </div>
         <script>
             var allSquares = ["#BishopsGotThis",
                 "[Publication] is a Church of Judas rag!",
@@ -144,7 +152,7 @@
                 "You have more clarity than the Pope so you get to call him names from your basement computer."];
             var i = 0;
             var availableSquares = allSquares;
-            var total = allSquares.length
+            var total = allSquares.length - 1;
             for (i = 0; i < 24; i++)
             {
 	            var number = Math.floor((Math.random() * total) + 1);
@@ -152,6 +160,14 @@
 	            availableSquares.splice(number,1);
 	            total--;
             }
+
+            //function addToken(cellName)
+            //{
+            //    var cell = document.getElementById(cellName);
+            //    var img = document.createElement('img');
+            //    img.src = "images/pope francis year of mercy bingo center square.png";
+            //    cell.appendChild(img);
+            //}
 
         </script>
         <script>

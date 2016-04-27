@@ -1,5 +1,5 @@
 td {
-    width: 150px;
+    width: 140px;
     height: 150px;
     padding-left: 10px;
     border: solid;
@@ -13,4 +13,7 @@ table {
     border-bottom-color: #DF5B2D;
     width: 751px;
     height: 750px;
+}
+body {
+    font-family: sans-serif;
 }
