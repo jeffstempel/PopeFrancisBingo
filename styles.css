@@ -3,6 +3,7 @@ td {
     height: 150px;
     padding-left: 10px;
     border: solid;
+    text-align: center;
 }
 table {
     border-left:solid;
@@ -11,7 +12,7 @@ table {
     border-right-color: #DF5B2D;
     border-bottom:solid;
     border-bottom-color: #DF5B2D;
-    width: 750px;
+    width: 800px;
     height: 750px;
 }
 body {

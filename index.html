@@ -19,42 +19,42 @@
             </p>
             <table>
                 <tr>
-                    <img src="images/pope francis year of mercy bingo header.png" style="width: 750px" />
+                    <img src="images/pope francis year of mercy bingo header.png" style="width: 800px" />
                 </tr>
                 <tr>
                     <td id="spot0" onclick="addToken('spot0')"></td>
-                    <td id="spot1"></td>
-                    <td id="spot2"></td>
-                    <td id="spot3"></td>
-                    <td id="spot4"></td>
+                    <td id="spot1" onclick="addToken('spot1')"></td>
+                    <td id="spot2" onclick="addToken('spot2')"></td>
+                    <td id="spot3" onclick="addToken('spot3')"></td>
+                    <td id="spot4" onclick="addToken('spot4')"></td>
                 </tr>
                 <tr>
-                    <td id="spot5"></td>
-                    <td id="spot6"></td>
-                    <td id="spot7"></td>
-                    <td id="spot8"></td>
-                    <td id="spot9"></td>
+                    <td id="spot5" onclick="addToken('spot5')"></td>
+                    <td id="spot6" onclick="addToken('spot6')"></td>
+                    <td id="spot7" onclick="addToken('spot7')"></td>
+                    <td id="spot8" onclick="addToken('spot8')"></td>
+                    <td id="spot9" onclick="addToken('spot9')"></td>
                 </tr>
                 <tr>
-                    <td id="spot10"></td>
-                    <td id="spot11"></td>
-                    <td><img src="images/pope francis year of mercy bingo center square.png" style="width:150px; height150px;" /></td>
-                    <td id="spot12"></td>
-                    <td id="spot13"></td>
+                    <td id="spot10" onclick="addToken('spot10')"></td>
+                    <td id="spot11" onclick="addToken('spot11')"></td>
+                    <td><img src="images/pope francis year of mercy bingo center square.png" style="width:125px; height150px;" /></td>
+                    <td id="spot12" onclick="addToken('spot12')"></td>
+                    <td id="spot13" onclick="addToken('spot13')"></td>
                 </tr>
                 <tr>
-                    <td id="spot14"></td>
-                    <td id="spot15"></td>
-                    <td id="spot16"></td>
-                    <td id="spot17"></td>
-                    <td id="spot18"></td>
+                    <td id="spot14" onclick="addToken('spot14')"></td>
+                    <td id="spot15" onclick="addToken('spot15')"></td>
+                    <td id="spot16" onclick="addToken('spot16')"></td>
+                    <td id="spot17" onclick="addToken('spot17')"></td>
+                    <td id="spot18" onclick="addToken('spot18')"></td>
                 </tr>
                 <tr>
-                    <td id="spot19"></td>
-                    <td id="spot20"></td>
-                    <td id="spot21"></td>
-                    <td id="spot22"></td>
-                    <td id="spot23"></td>
+                    <td id="spot19" onclick="addToken('spot19')"></td>
+                    <td id="spot20" onclick="addToken('spot20')"></td>
+                    <td id="spot21" onclick="addToken('spot21')"></td>
+                    <td id="spot22" onclick="addToken('spot22')"></td>
+                    <td id="spot23" onclick="addToken('spot23')"></td>
                 </tr>
             </table>
             <div>
@@ -173,13 +173,18 @@
                     total--;
                 }
 
-                //function addToken(cellName)
-                //{
-                //    var cell = document.getElementById(cellName);
-                //    var img = document.createElement('img');
-                //    img.src = "images/pope francis year of mercy bingo center square.png";
-                //    cell.appendChild(img);
-                //}
+                function addToken(cellName)
+                {
+                    var cell = document.getElementById(cellName);
+                    if (cell.style.backgroundImage != "url('images/pope-francis-thumbs-up.jpg')")
+                    {
+                        cell.style.backgroundImage = "url('images/pope-francis-thumbs-up.jpg')";
+                    }
+                    else
+                    {
+                        cell.style.backgroundImage = "url('images/')";
+                    }
+                }
 
             </script>
             <script>
