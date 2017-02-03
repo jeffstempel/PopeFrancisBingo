@@ -1,8 +1,14 @@
-﻿<html>
+﻿<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:og="http://ogp.me/ns#"
+      xmlns:fb="https://www.facebook.com/2008/fbml">
     <head>
         <link rel="stylesheet" href="styles.css" />
         <meta charset="utf-8">
         <title>Pope Francis Bingo</title>
+		<meta property="og:title" content="Pope Francis Bingo"/>
+		<meta property="og:type" content="website"/>
+		<meta property="og:url" content="http://www.popefrancisbingo.com"/>
+		<meta property="og:image" content="hhttp://www.popefrancisbingo.com/images/pope francis year of mercy bingo center square.png"/>
     </head>
     <body>
         <div id="page-wrap">
@@ -72,11 +78,17 @@
                     "All popes reform the church in some way",
                     "Are you more Catholic than the pope?",
                     "Before mass media, popes were still controversial.",
+					"Benedict gave Lutherans communion too!",
+					"But a cardinal said Amoris Laetitia was infallible!",
+					"But Fellay visited the Pope!",
+					"But Pope Benedict didn't remove Cardinal Kasper!",
                     "But Fr. Lombardi said…",
                     "But he said he was a loyal son of the Church!",
                     "Can’t we be patient and let history judge?",
                     "Do you have a source for that?",
                     "Don’t quench the Spirit!",
+					"Ecology is now a work of mercy!",
+					"Francis is too much of a saint.",
                     "Gathering heterodox to supervise them closely",
                     "Hafta meet people where they’re at",
                     "Has he said anything you agree with?",
@@ -85,24 +97,29 @@
                     "He does kneel! To Christ in the poor!",
                     "He gets confused.",
                     "He has bad knees",
+					"He has his gaze fixed on Mary!",
                     "He has repeatedly spoken out against homosexuality/ abortion",
                     "He hasn’t changed any doctrine",
                     "He hasn’t declared anything ex cathedra",
+					"He just doesn't know what's going on in the world.",
                     "He really loves Our Lady.",
                     "He says the Rosary daily.",
                     "He set up a TLM in Argentina!",
                     "He talks about demons and Satan A LOT.",
                     "He talks with heretics so he can convert them.",
+					"He was slain in the spirit!",
                     "He's a trained chemist, not a theologian!",
                     "He’s just a poorly-formed 1970s Jesuit.",
                     "He’s not infallible when speaking from an airline seat!",
                     "He’s saving money by living in a hotel.",
+					"He's secretly working to dash the hopes of modernists by getting their hopes high!",
                     "He’s teaching us to be humble",
                     "He’s trying to make a complex statement!",
                     "Hermeneutic of continuity",
                     "How could he?! He opposes abortion!",
                     "I agree with a lot of what Francis says.",
                     "I can see you’ve gone full Reformation Protestant.",
+					"I refuse to engage in bashing with those who use a secular source.",
                     "I should tell your priest/bishop what you think!",
                     "I want incontrovertible proof!",
                     "I want to see the original transcript.",
@@ -131,20 +148,25 @@
                     "Pontifex means “bridge builder”",
                     "Pope Benedict said the exact same thing",
                     "Pope Francis is my hero!",
+					"Pretty sure that Francis isn't trying to destroy Catholicism. He just thinks differently.",
                     "Reforming the Curia is a big job",
                     "Shut up, hater!",
                     "Smell of the Sheep",
                     "That journalist is untrustworthy",
                     "That’s not what he meant!",
                     "That was slipped in by one of his editors!",
+					"The 7 works of mercy were never infallible anyways.",
                     "The Africans will save us!",
                     "The good son of Noah covered his father’s nakedness.",
                     "The Holy Spirit chooses the pope",
+					"The Media misreported him (again)",
                     "The Pharisees critized Jesus, too",
+					"There was a Eucharistic miracle in his diocese!",
                     "Things are different in Argentina",
                     "Think of all the good things the Jesuits did.",
                     "This is really a criticism of JPII",
                     "This is really a criticism of BXVI",
+					"Traditional Triumphalist!",
                     "Translation error",
                     "Ungracious older brother!",
                     "Untrustworthy Advisors",
@@ -184,11 +206,14 @@
                     if (cell.style.backgroundImage != 'url("images/pope-francis-thumbs-up.jpg")')
                     {
                         cell.style.backgroundImage = "url('images/pope-francis-thumbs-up.jpg')";
-                        cell.style.fontStyle.fontcolor = "white";
+                        cell.style.color = "white";
+						cell.style.textShadow = "2px 2px 0px #000";
                     }
                     else
                     {
                         cell.style.backgroundImage = "none";
+						cell.style.color = "black";
+						cell.style.textShadow = "";
                     }
                 }
 
